@@ -1,0 +1,8 @@
+{
+    "mcpServers": {
+        "hr_data_service": {
+            "url": "https://dos-dataview.mcp.it.woa.com/mcp",
+            "protocol": "streamable-http"
+        }
+    }
+}

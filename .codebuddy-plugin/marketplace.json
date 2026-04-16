@@ -1,0 +1,20 @@
+{
+  "name": "HRIT",
+  "plugins": [
+    {
+      "name": "hr-ai-data",
+      "source": "./plugins/hr-ai-data",
+      "description": "专业的腾讯人力资源数据专家，基于HR数仓宽表知识以及您的数据权限提供智能分析功能"
+    },
+    {
+      "name": "page-deliver",
+      "source": "./plugins/page-deliver",
+      "description": "Deploy AI-generated web applications to AnyDev with automatic Gateway registration. AI generates code, this skill handles deployment infrastructure. Automatically provides OA-authenticated public URLs."
+    },
+    {
+      "name": "page-design",
+      "source": "./plugins/page-design",
+      "description": "HR业务系统标准组件服务与UI设计规范 - 模型代理服务、UI标准组件、etc..."
+    }
+  ]
+}
