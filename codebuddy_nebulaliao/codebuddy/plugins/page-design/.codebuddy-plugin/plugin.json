@@ -1,0 +1,13 @@
+{
+  "name": "page-design",
+  "version": "1.0",
+  "description": "HHR业务系统标准组件服务与UI设计规范 - 模型代理服务、UI标准组件、etc...",
+  "author": {
+    "name": "cxyxhhuang(黄鑫杰)",
+    "email": "cxyxhhuang@tencent.com"
+  },
+  "homepage": "https://cnb.cool/czspace/codebuddy-marketplace/-/tree/master/plugins/hr-vue-next",
+  "repository": "https://cnb.cool/czspace/codebuddy-marketplace/-/tree/master/plugins/hr-vue-next",
+  "keywords": ["前端组件", "vue3"],
+  "category": "HR业务系统标准组件和设计规范"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "hr-ai-data",
+  "version": "1.3.0",
+  "description": "专业的腾讯人力资源数据专家，基于HR数仓宽表知识以及您的数据权限提供智能分析功能",
+  "author": {
+    "name": "eivenchen(陈志)",
+    "email": "eivenchen@tencent.com"
+  },
+  "homepage": "https://cnb.cool/czspace/codebuddy-marketplace/-/tree/master/plugins/hr-ai-data",
+  "repository": "https://cnb.cool/czspace/codebuddy-marketplace/-/tree/master/plugins/hr-ai-data",
+  "keywords": ["AI问数"],
+  "category": "数据分析工具"
+}

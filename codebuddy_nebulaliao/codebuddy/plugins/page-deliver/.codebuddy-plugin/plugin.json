@@ -1,0 +1,13 @@
+{
+  "name": "page-deliver",
+  "version": "1.2",
+  "description": "Deploy AI-generated web applications to AnyDev with automatic Gateway registration. AI generates code, this skill handles deployment infrastructure. Automatically provides OA-authenticated public URLs.",
+  "author": {
+    "name": "allanchen(陈武方)",
+    "email": "allanchen@tencent.com"
+  },
+  "homepage": "https://cnb.cool/tencent-hrssc/hrit-codebuddy/-/tree/master/plugins/page-deliver",
+  "repository": "https://cnb.cool/tencent-hrssc/hrit-codebuddy/-/tree/master/plugins/page-deliver",
+  "keywords": ["部署", "AnyDev"],
+  "category": "自动化部署工具"
+}
