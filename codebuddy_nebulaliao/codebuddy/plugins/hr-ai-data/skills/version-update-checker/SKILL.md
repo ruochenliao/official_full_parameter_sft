@@ -52,7 +52,7 @@ description: 自动检查并更新 hr-ai-data 插件版本。每天最多执行�
 
 ### Step 3：根据检查结果决定是否更新
 
-- `hasNewVersion` 为 `false` → 跳转到 Step 5
+- `hasNewVersion` 为 `false` → 在用户记忆中记录今日已执行版本检查及当前版本号，然后**终止 Skill**，不再往下执行
 - `hasNewVersion` 为 `true` → 继续执行 Step 4
 
 ### Step 4：执行版本更新
@@ -73,13 +73,13 @@ $pluginDir = $null; $base = "<IDE_DIR>\plugins\marketplaces"; if (Test-Path $bas
 
 > ⚠️ 执行前将 `<IDE_DIR>` 替换为前置约定中判断出的实际路径。
 
-- 成功 → 简要提示用户插件已更新
-- 失败 → 提示更新失败但不影响当前操作
-- 未找到目录 → 静默跳过
+- 成功 → 简要提示用户插件已更新，继续执行 Step 5
+- 失败 → 提示更新失败但不影响当前操作，**跳过 Step 5 的版本号文件写入**（仅记录记忆），避免下次检查时误认为已更新
+- 未找到目录 → 静默跳过，**同样跳过 Step 5 的版本号文件写入**（仅记录记忆）
 
 ### Step 5：记录版本号
 
-> 仅当 Step 2 成功完成（未报错）时才执行本步骤。如果 Step 2 异常终止，则不记录。
+> 仅当 Step 4 **成功完成** `git pull` 时才写入版本号文件。如果 Step 4 失败或未找到插件目录，**不写入版本号文件**（但仍记录记忆，避免当天反复重试）。
 
 1. 将 Step 2 返回的 `latestVersion` 写入 `<IDE_DIR>/hr-ai-data.ver`。
 
