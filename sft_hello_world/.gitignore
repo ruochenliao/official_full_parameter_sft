@@ -1,0 +1,12 @@
+# 模型输出（文件太大，GitHub 不支持）
+sft_output/
+
+# Python 虚拟环境
+.venv/
+
+# Python 缓存
+__pycache__/
+*.pyc
+
+# TensorBoard 日志
+logs/
