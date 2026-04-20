@@ -1,0 +1,8 @@
+{
+    "mcpServers": {
+        "hr_data_service": {
+            "url": "http://9.135.247.190:31800/mcp",
+            "protocol": "streamable-http"
+        }
+    }
+}
